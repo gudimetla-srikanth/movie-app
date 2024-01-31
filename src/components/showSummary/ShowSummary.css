@@ -73,3 +73,57 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width:800px) {
+    .showDetail {
+        flex-direction: column;
+    }
+
+    .showDetail img {
+        width: 90vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .showDetail {
+        height: max-content;
+        width: 98vw;
+    }
+
+    .showsummary {
+        height: max-content;
+    }
+
+    .form_item {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .form_item input {
+        padding: 10px 10px;
+        width: 50vw;
+        cursor: pointer;
+    }
+
+    .form_item button {
+        padding: 20px 20px;
+        background-color: rgb(3, 53, 37);
+        border: none;
+        color: white;
+        font-weight: bolder;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .form {
+        width: 90%;
+        background-color: rgb(189, 199, 199);
+        padding: 10px 10px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
