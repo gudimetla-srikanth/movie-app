@@ -10,10 +10,9 @@ export default function Home({ resData }) {
                 {resData?.map((item, index) => {
                     return <div className="show_cards" key={index} onClick={() => navigate('/showDetails', { state: item })}>
                         <img src={item?.show?.image?.original} alt="" />
-                        <div className="show_item">Show name : {item.show.name}</div>
-                        <div className="show_item">Rating : {item.show.rating.average}</div>
-                        <div className="show_item">Status : {item.show.status}</div>
-                        <div className="show_item">Language : {item.show.language}</div>
+                        <div className="show_item"><span>Show name</span> : {item.show.name}</div>
+                        <div className="show_item"><span>Status</span> : {item.show.status}</div>
+                        <div className="show_item"><span>Language</span> : {item.show.language}</div>
                     </div>
                 })}
             </div>
